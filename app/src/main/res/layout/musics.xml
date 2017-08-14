@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/semazen"
+    tools:context=".MainActivity"
+    >
+
+    <ListView
+        android:id="@+id/song_list"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:listSelector="#009688"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_above="@+id/songDuration">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/songDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="-:-"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp"
+        android:textColor="#ff00ebdd"
+        android:layout_alignTop="@+id/gettext"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:layout_above="@+id/adView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <ImageButton
+            android:id="@+id/media_rew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:onClick="rewind"
+            android:src="@android:drawable/ic_media_rew" />
+
+        <ImageButton
+            android:id="@+id/media_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:onClick="pause"
+            android:src="@android:drawable/ic_media_pause" />
+
+        <ImageButton
+            android:id="@+id/media_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:onClick="play"
+            android:src="@android:drawable/ic_media_play" />
+
+        <ImageButton
+            android:id="@+id/media_ff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:onClick="forward"
+            android:src="@android:drawable/ic_media_ff"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:touchscreenBlocksFocus="false"
+        android:gravity="center_horizontal"
+        android:measureWithLargestChild="false"
+        android:id="@+id/linearLayout2"
+        android:weightSum="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="NEY DİNLETİLERİ"
+        android:gravity="center"
+        android:id="@+id/textTitle"
+        android:layout_gravity="center"
+        android:layout_above="@+id/song_list"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="28dp"
+        android:textColor="#ffffff"
+
+        android:layout_weight="0.83" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/gettext"
+        android:textColor="#ff00ebdd"
+        android:layout_above="@+id/seekBar"
+        android:layout_centerHorizontal="true" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+    </com.google.android.gms.ads.AdView>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

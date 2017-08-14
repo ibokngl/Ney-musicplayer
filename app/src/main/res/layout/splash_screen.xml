@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center_vertical"
+    android:background="@color/common_google_signin_btn_text_dark_focused"
+    android:weightSum="1">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:src="@drawable/ney"
+        android:id="@+id/imageView"
+
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="NEY DİNLETİLERİ"
+        android:id="@+id/textTitle"
+        android:layout_gravity="center"
+        android:textSize="28dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="15px"
+/>
+
+    <TextView
+        android:text=" "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDate"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:layout_marginTop="15px"
+        android:textSize="20dp" />
+</LinearLayout>

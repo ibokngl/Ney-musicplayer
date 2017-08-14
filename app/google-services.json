@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1089803892718",
+    "firebase_url": "https://neymusicplayer.firebaseio.com",
+    "project_id": "neymusicplayer",
+    "storage_bucket": "neymusicplayer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089803892718:android:cdc175746d7a306a",
+        "android_client_info": {
+          "package_name": "com.ney.ibokngl.dinleti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089803892718-d1t15jlp7656d3sdinbid80f8u66jm2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAplT_XZVOWYCxnb1reRKClznn6L4z_ubE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
